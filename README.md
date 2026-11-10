@@ -1,4 +1,4 @@
-# Shri Diggsingh School, Kalindipuram — Website & Portal
+# Sri Diggaj singh higher secondary School, Kalindipuram prayagraj— Website & Portal
 
 A free-to-host starter project with:
 - Public school profile website
