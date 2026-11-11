@@ -572,3 +572,61 @@ footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size
   0%, 100% { background-size: 0 0; }
   40%, 65% { background-size: 45px 45px; }
 }
+/* SDS Fireworks Final Upgrade */
+
+.welcome-fireworks {
+  min-height: 150px;
+  position: relative;
+  overflow: visible;
+  font-size: 0;
+}
+
+.welcome-fireworks::before,
+.welcome-fireworks::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 0%, #fff 2px, transparent 4px),
+    radial-gradient(circle at 50% 100%, #ffdf45 2px, transparent 4px),
+    radial-gradient(circle at 0% 50%, #ff5c8a 2px, transparent 4px),
+    radial-gradient(circle at 100% 50%, #55eaff 2px, transparent 4px),
+    radial-gradient(circle at 15% 15%, #fff 2px, transparent 4px),
+    radial-gradient(circle at 85% 15%, #ffdf45 2px, transparent 4px),
+    radial-gradient(circle at 15% 85%, #55eaff 2px, transparent 4px),
+    radial-gradient(circle at 85% 85%, #ff5c8a 2px, transparent 4px);
+  animation: sds-burst 1.8s ease-out infinite;
+}
+
+.welcome-fireworks::before {
+  left: 15%;
+  top: 10px;
+}
+
+.welcome-fireworks::after {
+  right: 15%;
+  top: 10px;
+  animation-delay: 0.9s;
+}
+
+@keyframes sds-burst {
+  0% {
+    transform: scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.7) rotate(90deg);
+    opacity: 0;
+  }
+}
+
+/* Welcome text visibility */
+.welcome-heading h2 {
+  color: #ffffff !important;
+}
