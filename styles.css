@@ -169,3 +169,175 @@ footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size
     font-size: 12px;
   }
 }
+/* SDS Welcome Animation */
+.welcome-scene {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 55px 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #071b49, #123d82, #071b49);
+  border-bottom: 4px solid #d9ad45;
+}
+
+.welcome-heading span {
+  color: #f5cf69;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.welcome-heading h1 {
+  color: #f5cf69;
+  font-size: clamp(25px, 5vw, 42px);
+  margin: 12px 0;
+}
+
+.welcome-heading h2 {
+  font-size: 22px;
+}
+
+.welcome-heading p {
+  color: #f8dfa0;
+}
+
+.students-scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin: 35px auto;
+}
+
+.student-card {
+  width: 220px;
+  padding: 20px;
+  border: 1px solid #e5bd5b;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.10);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: student-entry 1s ease both;
+}
+
+.student-card h3 {
+  color: #ffdc7a;
+  margin-bottom: 5px;
+}
+
+.student-character {
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-face {
+  font-size: 65px;
+}
+
+.student-uniform {
+  width: 115px;
+  min-height: 55px;
+  padding: 9px 4px;
+  box-sizing: border-box;
+  border: 2px solid #e6c15e;
+  border-radius: 12px 12px 5px 5px;
+  color: #fff;
+  background: #173b78;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.student-uniform strong {
+  font-size: 20px;
+  color: #ffda70;
+}
+
+.student-uniform small {
+  font-size: 8px;
+}
+
+.student-book,
+.student-bag {
+  position: absolute;
+  font-size: 28px;
+}
+
+.student-book {
+  left: 12px;
+  bottom: 8px;
+}
+
+.student-bag {
+  right: 12px;
+  bottom: 8px;
+}
+
+.football-area {
+  margin: 25px auto;
+}
+
+#sds-football {
+  position: absolute;
+  opacity: 0;
+}
+
+.football-button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 55px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#sds-football:checked + .football-button {
+  transform: rotate(720deg) scale(1.25);
+}
+
+.welcome-fireworks {
+  font-size: 25px;
+  animation: fireworks 1.5s ease-in-out infinite alternate;
+}
+
+.welcome-note {
+  color: #ffdc7a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.uniform-note {
+  color: #d9d9d9;
+}
+
+.welcome-scene:has(#sds-football:checked) .student-character {
+  animation: student-play 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes student-entry {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fireworks {
+  from { opacity: 0.45; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1.15); }
+}
+
+@keyframes student-play {
+  from { transform: translateY(0) rotate(-3deg); }
+  to { transform: translateY(-12px) rotate(3deg); }
+}
+
+@media (max-width: 500px) {
+  .students-scene {
+    gap: 18px;
+  }
+
+  .student-card {
+    width: min(220px, 85%);
+  }
+}
