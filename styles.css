@@ -36,3 +36,44 @@ article h3{color:#174d88;margin:0 0 8px}
 .photo{width:125px;height:140px;margin:0 auto 12px;display:grid;place-items:center;border:2px dashed #c8a24d;background:#f8f2e4;color:#765b26;font-weight:bold;font-size:13px}
 footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size:13px}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.grid,.two{grid-template-columns:1fr}section{padding:42px 6%}header{align-items:flex-start}}
+/* ROYAL GALLERY HOVER EFFECT */
+#gallery{
+  background:linear-gradient(180deg,#f5f7fb,#fff8e8);
+}
+
+#gallery article{
+  border:2px solid #dfbd70;
+  border-radius:14px;
+  overflow:hidden;
+  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;
+}
+
+#gallery article:hover{
+  transform:translateY(-9px);
+  border-color:#b88625;
+  box-shadow:0 14px 30px #0b285233;
+}
+
+#gallery .photo{
+  border-radius:9px;
+  transition:transform .4s ease,background .4s ease;
+}
+
+#gallery article:hover .photo{
+  transform:scale(1.04);
+  background:#f1dfb5;
+}
+
+#gallery article h3{
+  transition:color .3s ease;
+}
+
+#gallery article:hover h3{
+  color:#b88625;
+}
+
+@media(hover:none){
+  #gallery article:hover{
+    transform:none;
+  }
+}
