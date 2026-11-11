@@ -341,3 +341,96 @@ footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size
     width: min(220px, 85%);
   }
 }
+/* SDS Full School Uniform Design */
+
+.student-character {
+  min-height: 270px;
+  position: relative;
+  justify-content: flex-start;
+  padding-top: 12px;
+}
+
+.student-face {
+  font-size: 75px;
+  z-index: 2;
+}
+
+.student-uniform {
+  position: relative;
+  width: 145px;
+  height: 105px;
+  margin-top: 5px;
+  background: linear-gradient(#fff, #e8eefa);
+  color: #102e63;
+  border: 3px solid #d9ad45;
+  border-radius: 12px 12px 5px 5px;
+  z-index: 2;
+}
+
+.student-uniform strong {
+  color: #102e63;
+  font-size: 19px;
+}
+
+.student-uniform small {
+  color: #102e63;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.student-uniform::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 65px;
+  left: -29px;
+  top: 12px;
+  background: #fff;
+  border: 2px solid #d9ad45;
+  border-radius: 12px;
+  box-shadow: 174px 0 0 -2px #fff;
+}
+
+.student-uniform::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 52px;
+  left: 32px;
+  bottom: -55px;
+  background: #102e63;
+  border-radius: 4px 4px 10px 10px;
+  box-shadow: 48px 0 0 #102e63;
+}
+
+.student-book {
+  left: -12px;
+  bottom: 8px;
+  z-index: 4;
+  font-size: 32px;
+}
+
+.student-bag {
+  right: -12px;
+  bottom: 8px;
+  z-index: 4;
+  font-size: 32px;
+}
+
+.student-card {
+  overflow: visible;
+  margin-bottom: 15px;
+}
+
+.student-card h3 {
+  margin-top: 65px;
+}
+
+.girl .student-uniform {
+  border-radius: 12px 12px 5px 5px;
+}
+
+.football-button {
+  font-size: 85px;
+  display: inline-block;
+}
