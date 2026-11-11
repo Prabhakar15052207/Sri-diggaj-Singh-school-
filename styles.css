@@ -687,3 +687,26 @@ footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size
     opacity: 0;
   }
 }
+
+/* PREMIUM STICKY NAVIGATION */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #06152e, #123d70, #06152e);
+  border-bottom: 2px solid #e6bd63;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+  padding: 15px 6%;
+  gap: 30px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: #f1d58f;
+}
