@@ -710,3 +710,52 @@ nav a {
 nav a:hover {
   color: #f1d58f;
 }
+
+/* ROYAL PREMIUM HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #071b3d;
+  box-shadow: 0 6px 22px #00000035;
+}
+
+.site-header header {
+  background: linear-gradient(120deg, #06152e, #174d88);
+  border-bottom: 1px solid #d8ad54;
+}
+
+.site-header nav {
+  position: static;
+  background: #071b3d;
+  border-bottom: 2px solid #e6bd63;
+  padding: 14px 10px;
+  gap: 12px;
+}
+
+.site-header nav a {
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.site-header nav a:hover {
+  background: #e6bd63;
+  color: #071b3d;
+}
+
+@media(max-width:600px) {
+  .site-header header {
+    padding: 15px 4%;
+    gap: 10px;
+  }
+
+  .site-header nav {
+    gap: 5px;
+  }
+
+  .site-header nav a {
+    padding: 7px 9px;
+    font-size: 13px;
+  }
+}
