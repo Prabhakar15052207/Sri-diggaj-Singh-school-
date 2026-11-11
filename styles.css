@@ -77,3 +77,95 @@ footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size
     transform:none;
   }
 }
+
+/* Admission Section - Royal Blue & Gold */
+.admission {
+  padding: 60px 20px;
+  background: #f4f6fc;
+  color: #102653;
+  text-align: center;
+}
+
+.admission .section-heading span {
+  color: #b58a2a;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.admission .section-heading h2 {
+  color: #102653;
+  margin: 12px 0;
+}
+
+.admission-box,
+.fee-box {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 25px;
+  background: white;
+  border: 1px solid #d6b45b;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(16, 38, 83, 0.08);
+}
+
+.admission-box h3,
+.fee-box h3 {
+  color: #102653;
+  margin-bottom: 15px;
+}
+
+.demo-label {
+  color: #9b6d12;
+  font-weight: bold;
+  margin: 12px 0 20px;
+}
+
+.fee-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.fee-box th {
+  background: #102653;
+  color: #fff;
+  padding: 13px 8px;
+}
+
+.fee-box td {
+  padding: 12px 8px;
+  border: 1px solid #e0d5b5;
+  color: #263957;
+}
+
+.fee-box tr:nth-child(even) {
+  background: #f8f5ec;
+}
+
+.admission-box,
+.fee-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admission-box:hover,
+.fee-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(16, 38, 83, 0.15);
+}
+
+@media (max-width: 600px) {
+  .admission {
+    padding: 40px 10px;
+  }
+
+  .admission-box,
+  .fee-box {
+    padding: 15px 10px;
+  }
+
+  .fee-box th,
+  .fee-box td {
+    padding: 9px 4px;
+    font-size: 12px;
+  }
+}
