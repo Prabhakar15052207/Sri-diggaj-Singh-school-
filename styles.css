@@ -434,3 +434,30 @@ footer{text-align:center;background:#06152e;color:#dce5f3;padding:20px;font-size
   font-size: 85px;
   display: inline-block;
 }
+/* Football Kick Animation */
+.play-message {
+  display: none;
+  color: #ffdf80;
+  font-weight: bold;
+}
+
+#sds-football:checked ~ .play-message {
+  display: block;
+  animation: message-pop 0.5s ease;
+}
+
+#sds-football:checked + .football-button {
+  animation: kick-ball 1.2s ease-in-out infinite;
+}
+
+@keyframes kick-ball {
+  0% { transform: translateX(0) rotate(0); }
+  40% { transform: translateX(90px) rotate(360deg); }
+  70% { transform: translateX(0) rotate(720deg); }
+  100% { transform: translateX(0) rotate(720deg); }
+}
+
+@keyframes message-pop {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
