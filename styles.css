@@ -896,3 +896,13 @@ nav a:hover {
   margin-top: 12px;
   box-shadow: 0 6px 15px #0002;
 }
+/* HERO SECTION SPACING FIX */
+.hero-premium {
+  scroll-margin-top: 190px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
