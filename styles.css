@@ -759,3 +759,104 @@ nav a:hover {
     font-size: 13px;
   }
 }
+/* ROYAL PREMIUM HERO SECTION */
+.hero-premium {
+  background: linear-gradient(120deg, #06152e, #123d70);
+  color: white;
+  min-height: 460px;
+  padding: 65px 7%;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 35px;
+  overflow: hidden;
+}
+
+.hero-premium h2 {
+  color: #fff;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.25;
+}
+
+.hero-tag {
+  color: #f1d58f;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero-description {
+  color: #e2e9f4;
+  font-size: 17px;
+}
+
+.hero-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.hero-details span {
+  border: 1px solid #d8ad54;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #f7dfaa;
+  font-size: 13px;
+}
+
+.hero-btn {
+  background: #e6bd63;
+  color: #071b3d;
+  padding: 13px 20px;
+}
+
+.hero-note {
+  display: block;
+  color: #e6bd63;
+  margin-top: 22px;
+  letter-spacing: 2px;
+}
+
+.hero-image-placeholder {
+  min-height: 280px;
+  border: 2px solid #d8ad54;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #234d78, #091a35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #f6dfa8;
+  box-shadow: 0 15px 35px #0005;
+}
+
+.hero-image-placeholder span {
+  font-size: 75px;
+}
+
+.hero-image-placeholder strong {
+  letter-spacing: 3px;
+}
+
+.hero-image-placeholder small {
+  color: #dce5f3;
+}
+
+.hero-caption {
+  color: #f1d58f;
+  margin-top: 14px;
+  text-align: center;
+}
+
+@media(max-width:720px) {
+  .hero-premium {
+    grid-template-columns: 1fr;
+    padding: 45px 6%;
+    text-align: center;
+  }
+
+  .hero-details {
+    justify-content: center;
+  }
+}
