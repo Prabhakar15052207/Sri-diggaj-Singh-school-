@@ -971,3 +971,57 @@ nav a:hover {
     font-size: 14px;
   }
 }
+/* ROYAL VALUE CARDS */
+.hero-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.value-card {
+  background: linear-gradient(145deg, #123d70, #06152e);
+  border: 1px solid #e6bd63;
+  border-radius: 12px;
+  padding: 18px 8px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 20px #0003;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card span {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+
+.value-card strong {
+  display: block;
+  color: #f1d58f;
+  font-size: 16px;
+}
+
+.value-card small {
+  color: #e2e9f4;
+  font-size: 11px;
+}
+
+@media(max-width:720px) {
+  .hero-values {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .value-card {
+    padding: 14px 4px;
+  }
+
+  .value-card strong {
+    font-size: 14px;
+  }
+}
