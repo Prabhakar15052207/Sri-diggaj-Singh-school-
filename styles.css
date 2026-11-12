@@ -941,3 +941,33 @@ nav a:hover {
 .campus-label small {
   color: white;
 }
+/* PREMIUM MOBILE HERO LAYOUT */
+@media(max-width:720px) {
+  .hero-premium {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+    padding: 38px 6%;
+  }
+
+  .hero-content {
+    order: 1;
+  }
+
+  .hero-visual {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero-premium h2 {
+    font-size: 32px;
+  }
+
+  .hero-image-placeholder img {
+    height: 250px;
+  }
+
+  .hero-caption {
+    font-size: 14px;
+  }
+}
