@@ -860,3 +860,39 @@ nav a:hover {
     justify-content: center;
   }
 }
+/* PREMIUM CAMPUS VISUAL */
+.hero-visual {
+  width: 100%;
+  max-width: 520px;
+  margin: auto;
+}
+
+.hero-image-placeholder {
+  min-height: 330px;
+  border: 3px solid #d8ad54;
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, #102f59, #06152e);
+  box-shadow: 0 18px 40px #0006;
+  overflow: hidden;
+}
+
+.hero-image-placeholder span {
+  font-size: 95px;
+}
+
+.hero-image-placeholder strong {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.hero-caption {
+  background: #e6bd63;
+  color: #071b3d;
+  padding: 12px;
+  border-radius: 0 0 12px 12px;
+  font-weight: bold;
+  margin-top: 12px;
+  box-shadow: 0 6px 15px #0002;
+}
