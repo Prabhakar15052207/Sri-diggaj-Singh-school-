@@ -1177,3 +1177,7 @@ nav a:hover {
     text-align: left;
   }
 }
+/* FIX CAMPUS LABEL OVERLAP */
+.hero-premium .campus-label {
+  display: none;
+}
