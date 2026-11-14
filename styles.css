@@ -1181,3 +1181,71 @@ nav a:hover {
 .hero-premium .campus-label {
   display: none;
 }
+/* PREMIUM ACADEMICS SECTION */
+.academics-section {
+  padding: 80px 7%;
+  background: linear-gradient(135deg, #f7f9fc, #e8edf5);
+  text-align: center;
+}
+
+.academics-section .section-tag {
+  color: #b58b35;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.academics-section h2 {
+  color: #06152e;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.academics-section > p {
+  color: #536078;
+  margin: 15px 0 30px;
+}
+
+.academics-section .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.academics-section article {
+  background: #06152e;
+  color: white;
+  padding: 28px 18px;
+  border: 1px solid #c5a45e;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px #06152e20;
+  transition: transform 0.3s ease;
+}
+
+.academics-section article:hover {
+  transform: translateY(-7px);
+}
+
+.academics-section article h3 {
+  color: #e2c17b;
+  margin-bottom: 12px;
+}
+
+.academics-section article p {
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .academics-section {
+    padding: 55px 5%;
+  }
+
+  .academics-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .academics-section article {
+    padding: 22px 12px;
+  }
+}
